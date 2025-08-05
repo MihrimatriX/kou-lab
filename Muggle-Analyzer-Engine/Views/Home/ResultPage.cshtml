@@ -1,0 +1,189 @@
+﻿@{
+    ViewBag.Title = "Muggle Sonuçları";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">@ViewBag.uriFirst -----> Sayfası</h3>
+
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body table-responsive p-0" style="height: 300px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Kelime</th>
+                                    <th>Frekans</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < ViewBag.data.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@ViewBag.data[i]</td>
+                                        <td>@ViewBag.count[i]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">@ViewBag.uriFirst -----> Keywords</h3>
+
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body table-responsive p-0" style="height: 300px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Kelime</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < ViewBag.sayfa1Keyleri.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@ViewBag.sayfa1Keyleri[i]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            @* BURASI IKINCI SAYFA ILE ILGILI *@
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">@ViewBag.uriSecond -----> Sayfası</h3>
+
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body table-responsive p-0" style="height: 300px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Kelime</th>
+                                    <th>Frekans</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < ViewBag.data2.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@ViewBag.data2[i]</td>
+                                        <td>@ViewBag.count2[i]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">@ViewBag.uriSecond -----> Keywords</h3>
+
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body table-responsive p-0" style="height: 300px;">
+                        <table class="table table-head-fixed text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Kelime</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < ViewBag.sayfa2Keyleri.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@i</td>
+                                        <td>@ViewBag.sayfa2Keyleri[i]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-6">
+            <!-- small card -->
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h3>@ViewBag.benzerOrani<sup style="font-size: 20px">%</sup></h3>
+                    <p>Benzerlik Orani</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

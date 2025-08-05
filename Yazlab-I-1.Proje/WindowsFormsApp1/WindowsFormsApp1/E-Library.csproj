@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A66DAE27-70F0-4C6B-AAAC-8A45652D8C80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application_Window.Designer.cs">
+      <DependentUpon>Application_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baglanti.cs" />
+    <Compile Include="Book_Information_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Information_Window.Designer.cs">
+      <DependentUpon>Book_Information_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Window.Designer.cs">
+      <DependentUpon>Login_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registeration_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registeration_Window.Designer.cs">
+      <DependentUpon>Registeration_Window.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Application_Window.resx">
+      <DependentUpon>Application_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Information_Window.resx">
+      <DependentUpon>Book_Information_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Window.resx">
+      <DependentUpon>Login_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registeration_Window.resx">
+      <DependentUpon>Registeration_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time2Play-World-&amp;-Moon-+1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Shutdown_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_User_Male_104px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Adjust_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Close_Window_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Tick_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Downloading_Updates_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Home_Page_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Home_Page_100px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Maximize_Window_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Menu_Vertical_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Minimize_Window_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Minimize_Window_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Save_as_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Shutdown_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Shutdown_104px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Toggle_On_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Tune_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_User_Male_104px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Virtual_Reality_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Globe_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Adjust_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Close_Window_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Tick_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Downloading_Updates_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Globe_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Home_Page_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Home_Page_100px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Literature_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Literature_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Literature_100px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_96px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Lock_104px_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Maximize_Window_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Menu_Vertical_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Minimize_Window_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Minimize_Window_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Multiply_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Multiply_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Open_Book_100px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Save_as_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Shutdown_104px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Shutdown_104px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Toggle_On_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Tune_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_User_Male_104px_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Virtual_Reality_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_X_Coordinate_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Arrow_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Arrow_Pointing_Left_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Left_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Left_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Right_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Right_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Left_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Right_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Left_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Right_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Arrow_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Arrow_Pointing_Left_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Left_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Double_Right_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Left_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Left_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Right_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Chevron_Right_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="baglanti\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

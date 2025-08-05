@@ -1,0 +1,312 @@
+.root
+{
+    -fx-font-family: "Segoe UI";
+    -fx-outer-border: #222;
+}
+
+.text
+{
+    -fx-fill: #fff;
+}
+
+.text-field
+{
+    -fx-font-size: 18;
+    -fx-text-fill: #fff;
+    -fx-background-color: #333;
+}
+
+#hesabinyokmu
+{
+    -fx-font-size: 21;
+}
+
+#yokmu *
+{
+    -fx-fill: #888;
+}
+
+.hyperlink *
+{
+    -fx-fill: #4AC980;
+    -fx-underline: true;
+}
+
+.button
+{
+    -fx-background-color: #222;
+}
+
+#topbar .button
+{
+    -fx-background-radius: 30px;
+    -fx-font-size: 8;
+    -fx-min-height: 16;
+    -fx-min-width: 16;
+    -fx-max-width: 16;
+    -fx-max-height: 16;
+}
+
+#closebutton
+{
+    -fx-background-color: #C9574A;
+}
+
+#minimizebutton
+{
+    -fx-background-color: #C9964A;
+}
+
+#lefttoppane
+{
+    -fx-background-color: #222222;
+}
+
+#lefttoppanel
+{
+    -fx-background-color: #222;
+}
+
+#lefttoppanel .text
+{
+    -fx-font-size: 27;
+}
+
+.scroll-pane > .viewport 
+{
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.scroll-pane
+{
+    -fx-background-color: #333;
+    -fx-background-insets: 0;
+    -fx-padding: 12 12 12 12;
+}
+
+.scroll-pane > *
+{
+    -fx-background-color: #222;
+}
+
+.scroll-pane:focused 
+{
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner 
+{
+    -fx-background-insets: 0;
+}
+
+.date-picker > *
+{
+    -fx-background-insets: 0 0 0 0;
+}
+
+.date-picker > .arrow-button
+{
+    -fx-background-color: #222;
+}
+
+.date-picker-popup *
+{
+    -fx-background-color: #333;
+}
+
+#button_favmovies
+{
+    -fx-background-color: #444;
+    -fx-font-size: 16;
+}
+
+#button_favmovies_selected
+{
+    -fx-background-color: #444;
+    -fx-font-size: 16;
+    -fx-border-color: #4AC980;
+    -fx-border-width: 3;
+    -fx-border-radius: 3;
+}
+
+#pane_favmovies_disabled
+{
+    -fx-background-color: #222;
+    -fx-background-radius: 3;
+}
+
+#box_moviestars
+{
+    -fx-background-color: #333;
+    -fx-background-radius: 3;
+}
+
+#box_moviestars > *
+{
+    -fx-font-weight: 600;
+}
+
+#box_moviestars_score
+{
+    -fx-background-color: #222;
+    -fx-background-radius: 3;
+}
+
+#box_moviestars_score *
+{
+    -fx-fill: #C9964A;
+    -fx-font-weight: 400;
+}
+
+#mainmenu_topbar_button
+{
+    -fx-font-size: 24;
+}
+
+#mainmenu_search, #mainmenu_user
+{
+    -fx-background-color: #222;
+    -fx-background-radius: 3;
+}
+
+#mainmenu_search .text-field, #mainmenu_search .button
+{
+    -fx-font-size: 18;
+    -fx-text-fill: #fff;
+    -fx-background-color: #222;
+    -fx-background-radius: 0;
+}
+
+#mainmenu_user *
+{
+    -fx-fill: #fff;
+    -fx-font-size: 18;
+}
+
+#mainmenu_user .button
+{
+    -fx-font-size: 20;
+}
+
+#button_logoff
+{
+    -fx-background-image: url("images/icon_quit.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#box_movie
+{
+    -fx-background-color: #222;
+}
+
+#box_movie *
+{
+    -fx-fill: #fff;
+}
+
+#box_movie_name
+{
+    -fx-font-size: 20;
+    -fx-font-weight: 800;
+}
+
+#box_movie_type
+{
+    -fx-font-size: 20;
+}
+
+#box_movie_score
+{
+    -fx-font-size: 25;
+    -fx-fill: #C9964A;
+}
+
+#box_movie_kind
+{
+    -fx-font-size: 25;
+}
+
+#box_movie_watch
+{
+    -fx-font-size: 25;
+    -fx-background-color: #664AC9;
+    -fx-background-radius: 0;
+}
+
+#button_watch
+{
+    -fx-background-image: url("images/icon_play.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#button_stop
+{
+    -fx-background-image: url("images/icon_stop.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#button_go_to_mainmenu
+{
+    -fx-font-size: 24;
+    -fx-fill: #fff;
+}
+
+#watch_time
+{
+    -fx-fill: #fff;
+    -fx-font-size: 20;
+}
+
+.progress-bar > .bar 
+{
+    -fx-background-color: #664AC9;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 6;
+}
+
+.slider .track 
+{
+    -fx-background-color:null;
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 2.5;
+}
+
+.slider .thumb
+{
+    -fx-background-color: #7757e6;
+    -fx-padding: 9;
+}
+
+#button_chapter_previous, #button_chapter_next
+{
+    -fx-background-color: null;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 14;
+}
+
+#button_chapter_previous
+{
+    -fx-background-image: url("images/icon_bolum_before.png");
+}
+
+#button_chapter_next
+{
+    -fx-background-image: url("images/icon_bolum_next.png");
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button 
+{
+    -fx-background-color: #111;
+}
+
+.spinner
+{
+    -fx-focus-color: transparent;
+}

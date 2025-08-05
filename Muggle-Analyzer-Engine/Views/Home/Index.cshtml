@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Muggle Ana Sayfa";
+}
+
+<div class="renderBody">
+    <section class="section-1">
+        <img src="~/Content/img/logo2.jpg" class="logo" />
+
+        @using (Html.BeginForm())
+        {
+            <br /><br />
+            <div class="s-box">
+                <img src="~/Content/img/search.svg" class="search-icon" />
+                <input type="text" class="s-input" name="urlFirst" placeholder="Frekansları Bulmak İçin Burayı Kullanın." required />
+            </div>
+            <br />
+            <div class="s-box">
+                <img src="~/Content/img/search.svg" class="search-icon" />
+                <input type="text" class="s-input" placeholder="Karşılaştırma Yapmak İçin Burayı Kullanın." name="urlSecond" />
+                <input type="submit" class="s-btn" value="Muggle Araması" />
+            </div>
+        }
+
+
+    </section>
+</div>

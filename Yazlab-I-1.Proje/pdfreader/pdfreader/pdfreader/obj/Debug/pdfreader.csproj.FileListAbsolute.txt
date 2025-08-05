@@ -1,0 +1,14 @@
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\bin\Debug\pdfreader.exe.config
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\bin\Debug\pdfreader.exe
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\bin\Debug\pdfreader.pdb
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\bin\Debug\Interop.AcroPDFLib.dll
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\bin\Debug\AxInterop.AcroPDFLib.dll
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.csprojResolveAssemblyReference.cache
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\Interop.AcroPDFLib.dll
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\AxInterop.AcroPDFLib.dll
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.csproj.ResolveComReference.cache
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.Form1.resources
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.Properties.Resources.resources
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.csproj.GenerateResource.Cache
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.exe
+c:\users\ac\documents\visual studio 2015\Projects\pdfreader\pdfreader\obj\Debug\pdfreader.pdb

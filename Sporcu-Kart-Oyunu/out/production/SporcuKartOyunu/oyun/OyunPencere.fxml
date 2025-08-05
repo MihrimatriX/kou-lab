@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+      prefWidth="1600.0" style="-fx-background-image: url('/texture/ggggggg.jpg');;"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oyun.OyunController">
+    <children>
+        <Pane layoutX="1342.0" layoutY="240.0" prefHeight="421.0" prefWidth="240.0">
+            <children>
+                <Button fx:id="kartDagitma" layoutX="10.0" layoutY="362.0" mnemonicParsing="false" onAction="#kartDagit"
+                        prefHeight="45.0" prefWidth="220.0" text="Kart Dağıt"/>
+                <Label fx:id="kartDesteSembol" layoutX="10.0" layoutY="10.0" prefHeight="340.0" prefWidth="220.0"/>
+            </children>
+        </Pane>
+        <Pane layoutX="550.0" layoutY="275.0" prefHeight="350.0" prefWidth="500.0">
+            <children>
+                <Button fx:id="karsilastirButon" layoutX="130.0" layoutY="306.0" mnemonicParsing="false"
+                        onAction="#karsilastir" prefHeight="30.0" prefWidth="241.0" text="KARŞILAŞTIR"/>
+                <Label fx:id="kartPc" layoutX="40.0" layoutY="14.0" prefHeight="270.0" prefWidth="180.0"
+                       style="-fx-background-color: #a1a1a1;"/>
+                <Label fx:id="kartOyuncu" layoutX="281.0" layoutY="14.0" prefHeight="270.0" prefWidth="180.0"
+                       style="-fx-background-color: #a1a1a1;"/>
+            </children>
+        </Pane>
+        <Pane layoutX="292.0" layoutY="680.0" prefHeight="200.0" prefWidth="1050.0"
+              style="-fx-background-color: a0a0a0;">
+            <children>
+                <Label fx:id="oKart1" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart2" layoutX="140.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart3" layoutX="270.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart4" layoutX="400.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart5" layoutX="530.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart6" layoutX="660.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart7" layoutX="790.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="oKart8" layoutX="920.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+            </children>
+        </Pane>
+        <Pane layoutX="20.0" layoutY="20.0" prefHeight="860.0" prefWidth="250.0">
+            <children>
+                <Pane layoutX="10.0" layoutY="10.0" prefHeight="270.0" prefWidth="230.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="230.0"
+                               style="-fx-background-color: #eb2d72;" text="BİLGİSAYAR" textAlignment="CENTER"
+                               textOverrun="CENTER_ELLIPSIS">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="pcRes" layoutX="10.0" layoutY="40.0" prefHeight="220.0" prefWidth="130.0"/>
+                        <Label alignment="CENTER" layoutX="151.0" layoutY="40.0" prefHeight="45.0" prefWidth="70.0"
+                               style="-fx-background-color: #ccad31;" text="PUAN" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="bilgisayarPuan" alignment="CENTER" layoutX="151.0" layoutY="100.0"
+                               prefHeight="71.0" prefWidth="70.0" style="-fx-background-color: f5f5f5;" text="0"
+                               textAlignment="CENTER">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="pcKartSayi" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0"
+                               layoutY="185.0" prefHeight="71.0" prefWidth="70.0" style="-fx-background-color: f5f5f5;"
+                               text="KALAN KART">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane layoutX="10.0" layoutY="576.0" prefHeight="270.0" prefWidth="230.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="230.0"
+                               style="-fx-background-color: #eb2d72;" text="OYUNCU" textAlignment="CENTER"
+                               textOverrun="CENTER_ELLIPSIS">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="oyuncuRes" layoutX="10.0" layoutY="40.0" prefHeight="220.0" prefWidth="130.0"/>
+                        <Label alignment="CENTER" layoutX="151.0" layoutY="40.0" prefHeight="45.0" prefWidth="70.0"
+                               style="-fx-background-color: #ccad31;" text="PUAN" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="oyuncuPuan" alignment="CENTER" layoutX="151.0" layoutY="100.0" prefHeight="71.0"
+                               prefWidth="70.0" style="-fx-background-color: f5f5f5;" text="0" textAlignment="CENTER">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="oyuncuKartSayi" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0"
+                               layoutY="185.0" prefHeight="71.0" prefWidth="70.0" style="-fx-background-color: f5f5f5;"
+                               text="KALAN KART" textAlignment="CENTER">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane layoutX="292.0" layoutY="20.0" prefHeight="200.0" prefWidth="1050.0"
+              style="-fx-background-color: a0a0a0;">
+            <children>
+                <Label fx:id="pcKart1" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart2" layoutX="140.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart3" layoutX="270.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart4" layoutX="400.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart5" layoutX="530.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart6" layoutX="660.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart7" layoutX="790.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+                <Label fx:id="pcKart8" layoutX="920.0" layoutY="10.0" prefHeight="180.0" prefWidth="120.0"
+                       style="-fx-background-color: #8fc7ff;"/>
+            </children>
+        </Pane>
+        <Pane layoutX="292.0" layoutY="308.0" prefHeight="314.0" prefWidth="240.0"
+              style="-fx-background-color: a1a1a1;">
+            <children>
+                <Label fx:id="bo1" layoutX="14.0" layoutY="112.0" prefHeight="51.0" prefWidth="52.0" text="O1"/>
+                <Label fx:id="bo2" layoutX="14.0" layoutY="174.0" prefHeight="57.0" prefWidth="52.0" text="O2"/>
+                <Label fx:id="bo3" layoutX="14.0" layoutY="243.0" prefHeight="57.0" prefWidth="52.0" text="O3"/>
+                <TextField fx:id="bSporcuIsim" layoutX="10.0" layoutY="64.0" prefHeight="36.0" prefWidth="220.0"
+                           promptText="Sporcu Isim"/>
+                <TextField fx:id="bOBir" layoutX="77.0" layoutY="112.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="bOIki" layoutX="77.0" layoutY="178.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="bOUc" layoutX="77.0" layoutY="246.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="bSporcuTakim" layoutX="10.0" layoutY="14.0" prefHeight="36.0" prefWidth="220.0"
+                           promptText="Sporcu Takim"/>
+            </children>
+        </Pane>
+        <Pane layoutX="1077.0" layoutY="311.0" prefHeight="314.0" prefWidth="240.0"
+              style="-fx-background-color: a1a1a1;">
+            <children>
+                <Label fx:id="oo1" layoutX="14.0" layoutY="112.0" prefHeight="51.0" prefWidth="52.0" text="O1"/>
+                <Label fx:id="oo2" layoutX="14.0" layoutY="174.0" prefHeight="57.0" prefWidth="52.0" text="O2"/>
+                <Label fx:id="oo3" layoutX="14.0" layoutY="243.0" prefHeight="57.0" prefWidth="52.0" text="O3"/>
+                <TextField fx:id="oSporcuIsim" layoutX="10.0" layoutY="64.0" prefHeight="36.0" prefWidth="220.0"
+                           promptText="Sporcu Isim"/>
+                <TextField fx:id="oOBir" layoutX="77.0" layoutY="112.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="oOIki" layoutX="77.0" layoutY="178.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="oOUc" layoutX="77.0" layoutY="246.0" prefHeight="51.0" prefWidth="149.0"/>
+                <TextField fx:id="oSporcuTakim" layoutX="10.0" layoutY="14.0" prefHeight="36.0" prefWidth="220.0"
+                           promptText="Sporcu Takim"/>
+            </children>
+        </Pane>
+    </children>
+</Pane>

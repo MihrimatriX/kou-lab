@@ -1,0 +1,8 @@
+*text=auto
+*linguist-vendored
+*.mat linguist-vendored=false
+*.prefab linguist-vendored=false
+*.unity linguist-vendored=false
+*.anim linguist-vendored=false
+*.controller linguist-vendored=false
+*.cs linguist-detectable=true

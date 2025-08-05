@@ -1,0 +1,2 @@
+Karakter:Stormtrooper,Kapi:A
+Karakter:Stormtrooper,Kapi:B
