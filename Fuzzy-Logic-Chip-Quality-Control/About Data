@@ -1,0 +1,19 @@
+***************************************************************************************
+About this "data.txt" file
+This file contains three columns of data.
+The first two are two different tests performs on microchips.
+The first test is a temperature test, it determines out of 100 (100 being the best) how well the components withstood and the microchip functioned after being put under high temperatures.
+The second test determined how sturdy the components of the microchip were and how well it functioned after being subject to rough handling (ie, random shaking, bouncing movements).
+The third column is either a 0 or 1.
+This indicates whether the microchip was accepted or rejected.
+Microchip data from 1994.
+////////////////////////////////////////////////////////////////////////////////////////
+Bu "data.txt" dosyası hakkında
+Bu dosya üç veri sütunu içerir.
+İlk ikisi, mikroçipler üzerinde gerçekleştirilen iki farklı testtir.
+İlk test bir sıcaklık testidir, 100 üzerinden (100 en iyisidir) bileşenlerin ne kadar iyi dayandığını ve mikroçipin yüksek sıcaklıklara maruz bırakıldıktan sonra ne kadar iyi çalıştığını belirler.
+İkinci test, mikroçipin bileşenlerinin ne kadar sağlam olduğunu ve kaba muameleye tabi tutulduktan sonra (yani rastgele sallama, sıçrama hareketleri) ne kadar iyi çalıştığını belirledi.
+Üçüncü sütun 0 veya 1'dir.
+Bu, mikroçipin kabul edilip edilmediğini gösterir.
+1994'ten mikroçip verileri.
+-----------------------------------------------------------------------------------------

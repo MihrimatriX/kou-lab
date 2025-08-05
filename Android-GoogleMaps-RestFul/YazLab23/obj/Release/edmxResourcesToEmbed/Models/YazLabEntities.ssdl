@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YazLab23Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Kampanya">
+    <Key>
+      <PropertyRef Name="FirmaID" />
+    </Key>
+    <Property Name="FirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirmaAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirmaLokasyonX" Type="int" />
+    <Property Name="FirmaLokasyonY" Type="int" />
+    <Property Name="KampanyaIcerik" Type="nvarchar" MaxLength="50" />
+    <Property Name="KampanyaSuresi" Type="int" />
+    <Property Name="KampanyaTarih" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciAdi" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Kullanicisifre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="YazLab23ModelStoreContainer">
+    <EntitySet Name="Kampanya" EntityType="Self.Kampanya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,1 @@
+219 ile 286. kodalar arasýndaki printflerde alt satýrlarýna char dizisi ve sprintf komutlarý konuldu hemen altýnda outtextxy(600,300+f,str); f+=30; le konsola yazdýrýldý

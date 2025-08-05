@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YazLab23ModelStoreContainer" CdmEntityContainer="YazLab23Entities2">
+    <EntitySetMapping Name="Kampanya">
+      <EntityTypeMapping TypeName="YazLab23Model.Kampanya">
+        <MappingFragment StoreEntitySet="Kampanya">
+          <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="FirmaLokasyonX" ColumnName="FirmaLokasyonX" />
+          <ScalarProperty Name="FirmaLokasyonY" ColumnName="FirmaLokasyonY" />
+          <ScalarProperty Name="KampanyaIcerik" ColumnName="KampanyaIcerik" />
+          <ScalarProperty Name="KampanyaSuresi" ColumnName="KampanyaSuresi" />
+          <ScalarProperty Name="KampanyaTarih" ColumnName="KampanyaTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="YazLab23Model.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Kullanicisifre" ColumnName="Kullanicisifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

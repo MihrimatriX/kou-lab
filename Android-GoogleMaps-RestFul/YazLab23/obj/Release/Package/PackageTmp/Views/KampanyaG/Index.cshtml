@@ -1,0 +1,69 @@
+﻿@model IEnumerable<YazLab23.Models.Kampanya>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirmaAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirmaLokasyonX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirmaLokasyonY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KampanyaIcerik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KampanyaSuresi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KampanyaTarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tur)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirmaAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirmaLokasyonX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirmaLokasyonY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KampanyaIcerik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KampanyaSuresi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KampanyaTarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tur)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FirmaID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FirmaID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FirmaID })
+        </td>
+    </tr>
+}
+
+</table>

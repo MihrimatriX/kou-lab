@@ -1,0 +1,23 @@
+·         Ýndirdiðin zip içerisinden graphics.h ve winbgim.h çýkacak bunlarý codeblocks’u yüklediðin yere git CodeBlocks\ MinGW \include klasörüne at.
+·         Libbgi.a dosyasýný da ayný þekilde codeblocks’un yüklü olduðu yerde lib klasörüne ekle,
+·         Daha sonra codeblocks’u aç  Settings >> Compiler >> Linker ayarlarýna gel link libraries kýsmýnda add butonuna týkla ve 2. Adýmda eklediðin libbgi.a dosyasýný seç
+·         Other linker options kýsmýna da  “-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32” bu komutlarý ekle
+ 
+Bir c++ projesi oluþtur ve aþaðýdaki test komutunu yapýþtýrarak dene abi
+ 
+int main()
+{
+   int gd = DETECT, gm;
+   int x = 320, y = 240, radius;
+ 
+   initgraph(&gd, &gm, "C:\\TC\\BGI");
+ 
+   for ( radius = 25; radius <= 125 ; radius = radius + 20)
+      circle(x, y, radius);
+ 
+   getch();
+   closegraph();
+   return 0;
+}
+ 
+NOT: eðer satýr 302’de hata alýrsan oraya int left=0, int top=0, int right=INT_MAX, int bottom=INT_MAX, komutunu yapýþtýr.

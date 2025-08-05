@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" prefHeight="500.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yunusemregul.prolab23.controllers.LoginController">
+   <children>
+      <BorderPane prefHeight="506.0" prefWidth="1000.0">
+         <left>
+            <Pane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #333333;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="500.0" prefWidth="500.0">
+                     <center>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@images/logo_main.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+               </children></Pane>
+         </left>
+         <right>
+            <BorderPane prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane fx:id="topbar" prefHeight="28.0" prefWidth="200.0" style="-fx-background-color: #222222;" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" fillHeight="false" prefHeight="28.0" prefWidth="500.0">
+                           <children>
+                              <Button fx:id="minimizebutton" mnemonicParsing="false" onAction="#minimize">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="closebutton" mnemonicParsing="false" onAction="#close">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></Pane>
+               </top>
+               <center>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #444444;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="472.0" prefWidth="500.0">
+                           <children>
+                              <TextField fx:id="entry_email" prefHeight="40.0" prefWidth="327.0" promptText="Email" style="-fx-background-color: #333333; -fx-font-family: Segoe UI;">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextField>
+                              <PasswordField fx:id="entry_pass" prefHeight="40.0" prefWidth="327.0" promptText="Şifre">
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </PasswordField>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#tryLogIn" prefHeight="40.0" prefWidth="327.0" style="-fx-background-color: #4AC980; -fx-font-weight: 800; -fx-font-size: 18; -fx-font-family: Segoe UI;" text="GİRİŞ" textAlignment="CENTER" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Segoe UI" size="18.0" />
+                                 </font>
+                              </Button>
+                              <HBox fx:id="hesabinyokmu" alignment="CENTER" prefHeight="28.0" prefWidth="327.0">
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label fx:id="yokmu" contentDisplay="CENTER" text="Hesabın yok mu?" />
+                                    <Hyperlink fx:id="hyperlink_kayitol" onAction="#openKayitOlMenu" text="Kayıt Ol">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </Hyperlink>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </center>
+            </BorderPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
