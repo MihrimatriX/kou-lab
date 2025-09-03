@@ -1,2 +1,0 @@
-# Graphics-In-C
- Prolab

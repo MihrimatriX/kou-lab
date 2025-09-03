@@ -19,16 +19,16 @@ Bu program, çiplerin kalite kontrolünü bulanık mantık yöntemiyle gerçekle
 - Gerekli kütüphaneler: matplotlib, numpy, scikit-fuzzy, scipy
 
 ### Kurulum
-Gerekli kütüphaneleri yüklemek için terminalde aşağıdaki komutu çalıştırın:
+Gerekli kütüphaneleri yüklemek için:
 
-```
-pip install -r requirements.txt
+```bash
+pip install matplotlib numpy scikit-fuzzy scipy
 ```
 
 ### Çalıştırma
-Ana dizinde terminal açıp aşağıdaki komutu girin:
+Ana dizinde:
 
-```
+```bash
 python main.py
 ```
 
